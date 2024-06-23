@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em 0;
+            animation: slideInFromTop 1s ease-in-out;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1.5em;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        article {
+            margin-bottom: 2em;
+        }
+        article h1 {
+            margin-top: 0;
+            font-size: 2.5em;
+            color: #444;
+            animation: slideInFromBottom 1s ease-in-out;
+        }
+        article p {
+            line-height: 1.6;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 2em;
+        }
+        .social-links a {
+            margin: 0 1em;
+            color: #444;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #007BFF;
+        }
+        footer {
+            font-size: 0.9em;
+            animation: slideInFromBottom 1s ease-in-out;
+        }
+        /* Add some animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInFromTop {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        @keyframes slideInFromLeft {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        @keyframes slideInFromBottom {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h1>About Me</h1>
+            <p>Hello! Vaishnavi Madalapure, a passionate student currently pursuing my degree in Computer Science. My interest in technology began at an early age, and it has only grown as I've delved deeper into the world of programming and tech innovation.</p>
+            <p>This blog is a space where I share my journey as a student in the tech field. Here, you'll find a variety of content, including tutorials, project showcases, and insights into the latest tech trends. My goal is to document my learning process and provide valuable resources for fellow students and tech enthusiasts.</p>
+            <p>Throughout my studies, I've worked on several projects ranging from web development to artificial intelligence. I love experimenting with new technologies and continuously challenging myself to learn more. This blog reflects my passion for technology and my commitment to growing as a developer.</p>
+            <p>Aside from my studies, I enjoy participating in hackathons, contributing to open-source projects, and engaging with the tech community. I believe that collaboration and knowledge sharing are key to personal and professional growth.</p>
+            <p>Thank you for visiting my blog! I hope you find the content informative and inspiring. Feel free to reach out if you have any questions, suggestions, or if you'd just like to connect. Let's learn and grow together!</p>
+            <p>Happy coding!</p>
+        </article>
+        <div class="social-links">
+            <a href="https://github.com/MadalapureVaishnavi" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/vaishnavi-madalapure-500829269/" target="_blank">LinkedIn</a>
+            <a href="https://x.com/vaishnavi_m03" target="_blank">Twitter</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tech Blog. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('About page loaded');
+        });
+    </script>
+</body>
+</html>
